@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { Link, useNavigate } from "react-router-dom";
+import swal from 'sweetalert';
 
 //import firebase
 import '../firebase'
@@ -28,6 +29,8 @@ function Signup() {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
+
+      swal("Sign Up error!", errorMessage, "warning");
     });
 
 
