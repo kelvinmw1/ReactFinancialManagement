@@ -15,7 +15,7 @@ function Navbar() {
           </ul>
         </div>
 
-      </div>
+      </div> 
       <div className='Leftnav'>
         <div className='Dash'>
         <ul>
@@ -27,11 +27,8 @@ function Navbar() {
 
         </div>
       </div>
-      
-  
-      
-     
     </div>
+    
   )
 }
 
