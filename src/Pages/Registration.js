@@ -55,12 +55,12 @@ function Registration() {
   }
 
   return (
-    <div className='Register'>
+  <div className='Register'>
     <div><input ref={email} type="text" />Enter Your Email</div>
     <div><input ref={Name} type="text" />Enter Your Username</div>
     <div><input ref={password} type="text" />Enter Your Password</div>
     <button onClick={signUpUser}>Sign Up</button>
-</div>
+  </div>
   )
 }
 

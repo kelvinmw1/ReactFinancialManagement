@@ -1,11 +1,12 @@
-import React, { useRef } from 'react'
-import Navbar from '../Components/Navbar'
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React, { useRef } from 'react';
+import Navbar from '../Components/Navbar';
+import Leftnav from '../Components/Leftnav.Js';
+import { Form } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import {useNavigate } from "react-router-dom";
 
 // import firebase
-import '../firebase'
+import '../firebase';
 import { Db } from '../firebase';
 import { doc, setDoc } from "firebase/firestore";
 
@@ -19,8 +20,10 @@ function Addincome() {
   const navigate = useNavigate();
 
   //add account function
+
   function submitIncome(){
     //get data from inputs 
+    
     const amountInput = amount.current.value;
     const incomeDateInput = incomeDate.current.value;
     const incomeAccountInput = incomeAccount.current.value;
@@ -46,16 +49,17 @@ function Addincome() {
     })
 
 }
-
+  
 
   return (
     <div>     
      <Navbar/>
-     <div>
-       <h1 className='pagename'>Add Income</h1>
-       <Button className='addbtn' >Add Income</Button>
-     </div> 
+     <Leftnav/>
+
       <div className='area'>
+        <div>
+          <h1 className='pagename'>Add Income</h1>       
+        </div> 
         <Form.Group className="mb-3" controlId="formBasicEmail" >
           <Form.Label>Amount</Form.Label>
           <Form.Control type="text" ref={amount} />

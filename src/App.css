@@ -1,9 +1,4 @@
-.Maindiv{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    
-  }
+
   .logo{
     font-size: 40px;
     font-weight: bolder;
@@ -31,13 +26,12 @@
   }
   
   .Leftnav{
-    position: absolute;
     height: 100vh;
     width: 20%;
     background-color: black;
     
   }
-  .Dash li{
+  .Dash{
     display: block;
     text-decoration: none;
     margin-top: 40px;
@@ -53,16 +47,26 @@
     margin-left: 250%;
   
   }
-  .pagename{
+  /* .pagename{
     margin-top: -500px;
     margin-left: 285px;
     font-size: 30px;
     font-weight: bolder;
-  }
-  .addbtn{
-    margin-left: 1185px;
-    
-  }
+  } */
+  
   .area{
     margin-left: 350px;
+    margin-top: -500px;
+  } 
+  .workarea{
+    padding-left: 300px;
+    padding-right: 20px;
+    margin-top: -500px;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .disp{
+    margin-left: 500px;
+    margin-top: -500px;
   }

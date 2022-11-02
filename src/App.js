@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './Components/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './Pages/Dashboard';
 import Registration from './Pages/Registration';
 import Signup from './Pages/Signup';
