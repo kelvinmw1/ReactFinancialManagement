@@ -3,8 +3,8 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className="Maindiv">
-      <div className='topnav'>
+  
+     <div className='topnav'>
         <div className='logo'>Finance App</div>
         <div className='Listitems'>
           <ul>
@@ -16,8 +16,6 @@ function Navbar() {
         </div>
 
       </div> 
-      
-    </div>
     
   )
 }

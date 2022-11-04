@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Navbar from '../Components/Navbar';
-import Leftnav from '../Components/Leftnav.Js';
+import LeftNavbar from '../Components/LeftNavbar';
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import {useNavigate } from "react-router-dom";
@@ -52,43 +52,46 @@ function Addincome() {
   
 
   return (
-    <div>     
-     <Navbar/>
-     <Leftnav/>
+    <div className='dashboard'>
 
-      <div className='area'>
-        <div>
-          <h1 className='pagename'>Add Income</h1>       
-        </div> 
-        <Form.Group className="mb-3" controlId="formBasicEmail" >
-          <Form.Label>Amount</Form.Label>
-          <Form.Control type="text" ref={amount} />
-        </Form.Group>
+      <LeftNavbar/>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Income Date</Form.Label>
-          <Form.Control type="datetime-local"  ref={incomeDate}/>
-        </Form.Group>
+     
 
+      <div className='workspace'>
+        <Navbar/>
+        <div className='addcontents'>
+            <h1>Add Income</h1>
+            <Form.Group className="mb-3" controlId="formBasicEmail" >
+            <Form.Label>Amount</Form.Label>
+            <Form.Control type="text" ref={amount} />
+          </Form.Group>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Income Account</Form.Label>
-          <Form.Select ref={incomeAccount} >
-          <option value="Cheque">Cheque</option>
-          <option value="Cash">Cash</option>
-          <option value="M-Pesa">M-Pesa</option>
-          </Form.Select>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Received By</Form.Label>
-          <Form.Control type="text"  ref={receivedBy}/>
-        </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Income Date</Form.Label>
+            <Form.Control type="datetime-local"  ref={incomeDate}/>
+          </Form.Group>
 
 
-        <Button variant="primary" type="submit" onClick={submitIncome}>
-          Submit
-        </Button>
+          <Form.Group className="mb-3">
+            <Form.Label>Income Account</Form.Label>
+            <Form.Select ref={incomeAccount} >
+            <option value="Cheque">Cheque</option>
+            <option value="Cash">Cash</option>
+            <option value="M-Pesa">M-Pesa</option>
+            </Form.Select>
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Received By</Form.Label>
+            <Form.Control type="text"  ref={receivedBy}/>
+          </Form.Group>
+
+
+          <Button variant="primary" type="submit" onClick={submitIncome}>
+            Submit
+          </Button>
+        </div>
       </div>
            
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../Components/Navbar';
+import LeftNavbar from '../Components/LeftNavbar';
 import { Button } from 'react-bootstrap';
 import {useNavigate} from "react-router-dom";
 
@@ -57,18 +58,23 @@ function Profile() {
 
 
   return (
-    <div>
-      
-      <Navbar/>
+    <div className='dashboard'>
 
-      <div className='disp'>
-        <h1>Profile</h1>
-        <hr/>        
-        <h1>{userName}</h1>
-        <h3>{userEmail}</h3>
-        <Button>Log Out</Button>                
-      </div>     
-     
+      <LeftNavbar/>
+      <div className='workspace'>
+        <Navbar/>
+        <div className='contents'>
+          <h1>Profile</h1>
+          <hr/>
+          <div className='profilecontent'>
+          <h1>{userName}</h1>
+          <h3>{userEmail}</h3>
+          <Button>Log Out</Button> 
+          </div>
+
+        </div>
+      </div>
+
     </div>
     
     

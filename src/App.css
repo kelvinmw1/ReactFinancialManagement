@@ -1,72 +1,49 @@
+.dashboard{
+  display: flex;
+}
+.Leftnav{
+  height: 100vh;
+  width: 20%;
+  background-color: black;
+}
+.links{
+  display: grid;
+  margin-top: 250px;
+  padding: 30px;
+  justify-content: space-between;
+}
 
-  .logo{
-    font-size: 40px;
-    font-weight: bolder;
-    color: white;
-    margin-left: 50px;
-  }
-  .topnav{
-    height: 150px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    
-  }
-  .Listitems li{
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    margin-right: 30px;
-    color: white;
-    margin-left: 20px;
+.workspace{
+  height: 100vh;
+  width: 80%;
+}
+.topnav{
+  height: 20%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.logo{
+  color: white;
+  font-size: 30px;
   
-  }
-  
-  .Leftnav{
-    height: 100vh;
-    width: 20%;
-    background-color: black;
-    
-  }
-  .Dash{
-    display: block;
-    text-decoration: none;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    list-style: none;
-    color: white;
-    margin-left: 20px;
-  }
-  .Page h1{
-    font-size: 40px;
-    font-weight: bolder;
-    color: red;
-    margin-left: 250%;
-  
-  }
-  /* .pagename{
-    margin-top: -500px;
-    margin-left: 285px;
-    font-size: 30px;
-    font-weight: bolder;
-  } */
-  
-  .area{
-    margin-left: 350px;
-    margin-top: -500px;
-  } 
-  .workarea{
-    padding-left: 300px;
-    padding-right: 20px;
-    margin-top: -500px;
-    display: flex;
-    justify-content: space-between;
-   
-  }
-  .disp{
-    margin-left: 500px;
-    margin-top: -500px;
-  }
+}
+.Listitems ul li{
+  display: inline-block;
+  color: white;
+  margin-right: 20px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.profilecontent{
+  padding: 100px;
+
+}
+.addcontents{
+  padding: 30px;
+}
