@@ -7,7 +7,7 @@ import Profile from './Pages/Profile';
 import Income from './Pages/Income';
 import Addincome from './Pages/Addincome';
 
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {

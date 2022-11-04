@@ -47,3 +47,18 @@
 .addcontents{
   padding: 30px;
 }
+.register{
+  display: flex;
+  
+}
+.leftside{
+  width: 50%;
+  height: 100vh;
+  padding: 200px;
+}
+.rightside{
+  height: 100vh;
+  width: 50%;
+  background-image: url(../src/images/pexels-karolina-grabowska-4386439.jpg);
+  background-size: cover;
+}

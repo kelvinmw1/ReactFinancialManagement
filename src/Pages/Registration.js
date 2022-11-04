@@ -1,6 +1,11 @@
 import React, { useRef } from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import swal from 'sweetalert';
+
+//bootstrap
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
 
 // import firebase
 import '../firebase'
@@ -38,7 +43,7 @@ function Registration() {
       
       }).then(()=>{
 
-        navigate("/Dashboard")
+        navigate("/Dashboard");
 
       })
 
@@ -55,12 +60,38 @@ function Registration() {
   }
 
   return (
-  <div className='Register'>
-    <div><input ref={email} type="text" />Enter Your Email</div>
-    <div><input ref={Name} type="text" />Enter Your Username</div>
-    <div><input ref={password} type="text" />Enter Your Password</div>
-    <button onClick={signUpUser}>Sign Up</button>
-  </div>
+
+    <div className='register'>
+
+      <div className='leftside'>
+          <Form>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" ref={email}/>
+          </Form.Group>
+          
+            <Form.Label>User Name</Form.Label>
+            <Form.Control type="text" placeholder="User Name" ref={Name}/>
+
+            <br />
+        
+
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" ref={password}/>
+          </Form.Group>
+        
+          <Button variant="primary" type="submit" onClick={signUpUser}>
+            Register
+          </Button>
+          <br/> <br/>
+          <p>Already have an account? <Link to="/">Sign In</Link></p>
+        </Form>
+      </div>
+      <div className='rightside'></div>
+
+    </div>
+
   )
 }
 
